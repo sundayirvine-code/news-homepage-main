@@ -7,103 +7,72 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="/styles/media.css">
+  <link rel="stylesheet" href="/styles/reset.css">
   <title>Frontend Mentor | News homepage</title>
  
 </head>
 <body>
-<div id="container">
-    <!--logo and menu section -->
-    <section class="logo-menu" id="logo-menu">
-      <div id="logo">
-        <img src="assets/images/logo.svg" alt="News Page Logo">
+  <div id="main-grid">
+    <div id="logo">
+      <img src="assets/images/logo.svg" alt="News Page Logo">
+    </div>
+    <nav id="menu">
+      <ul>
+        <li class="menu-item">Home</li>
+        <li class="menu-item">New</li>
+        <li class="menu-item">Popular</li>
+        <li class="menu-item">Trending</li>
+        <li class="menu-item">Categories</li>
+      </ul>
+    </nav>
+    <div id="image"></div>
+    <div id="side">
+      <div class="side-item0">
+        <h1>New</h1>
       </div>
-      <nav id="menu">
-        <ul>
-          <li class="menu-item">Home</li>
-          <li class="menu-item">New</li>
-          <li class="menu-item">Popular</li>
-          <li class="menu-item">Trending</li>
-          <li class="menu-item">Categories</li>
-        </ul>
-      </nav>
-    </section>
-    
-    <!--main section-->
-    <section id="main">
+      <div class="side-item1 s-item">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="side-item2 s-item">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="side-item3 s-item">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+    <div id="main">
+      <h1 class="heading">The Bright Future of Web 3.0?</h1>
+      <p class="text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+      <button class="btn">Read more</button>
+    </div>
+    <div id="cards">
 
-      <div id="main2">
-        <div id="image">
-        </div>
-        <div id="message">
-          <div id="header">
-            <h1>The Bright Future of Web 3.0?</h1>
-          </div>
-          <div id="action">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise</p>
-            <button>Read more</button>
-          </div>
-        </div>
+      <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+      <div class="msg">
+        <div class="number">01</div>
+        <h4>Reviving Retro PCs</h4>
+        <div class="txt">What happens when old PCs are given modern upgrades?</div>
       </div>
 
-      <div id="side-bar">
-        <div class="side-item new-item">
-          <h1>New</h1>
-        </div>
-        <div class="side-item">
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
-        <div class="side-item">
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div>
-        <div class="side-item">
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>
+      <img src="/assets/images/image-top-laptops.jpg" alt="Top Laptops">
+      <div class="msg">
+        <div class="number">02</div>
+        <h4>Top 10 Laptops of 2022</h4>
+        <div class="txt">Our best picks for various needs and budgets.</div>
       </div>
-    </section>
 
-    <section id="cards">
-      <div class="card-items">
-        <div class="img">
-          <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PCs">
-        </div>
-        <div class="msg">
-          <div class="number">01</div>
-          <h4>Reviving Retro PCs</h4>
-          <div class="txt">What happens when old PCs are given modern upgrades?</div>
-        </div>
+      <img src="/assets/images/image-gaming-growth.jpg" alt="">
+      <div class="msg">
+        <div class="number">03</div>
+        <h4>The Growth of Gaming</h4>
+        <div class="txt">How the pandemic has sparked fresh opportunities.</div>
       </div>
-      <div class="card-items">
-        <div class="img">
-          <img src="/assets/images/image-top-laptops.jpg" alt="Top Laptops">
-        </div>
-        <div class="msg">
-          <div class="number">02</div>
-          <h4>Top 10 Laptops of 2022</h4>
-          <div class="txt">Our best picks for various needs and budgets.</div>
-        </div>
-      </div>
-      <div class="card-items">
-        <div class="img">
-          <img src="/assets/images/image-gaming-growth.jpg" alt="">
-        </div>
-        <div class="msg">
-          <div class="number">03</div>
-          <h4>The Growth of Gaming</h4>
-          <div class="txt">How the pandemic has sparked fresh opportunities.</div>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </footer>
-</div>
+
+    </div>
+  </div>
 </body>
 </html>
