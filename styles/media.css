@@ -1,0 +1,167 @@
+@media screen and (max-width: 760px){
+    .menu-item{
+        margin-right: 10px;
+    }
+    #main-grid{
+        width: 95%;
+        margin: 0 auto;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(40px, auto);
+        grid-template-areas:
+         "logo logo . hamburger menu"
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "cards cards cards cards cards"
+         "cards cards cards cards cards"
+         "cards cards cards cards cards"
+         ;
+    }
+
+    #main{
+        padding: 10px 0px;
+        grid-area: main;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas: 
+        "heading heading heading heading heading"
+        "heading heading heading heading heading"
+        "heading heading heading heading heading"
+        "text text text text text"
+        "text text text text text"
+        "text text text text text"
+        "btn btn . . ."
+    }
+
+    #cards{
+        padding: 0;
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        margin-top: 18px;
+        row-gap: 10px;
+    }
+
+    #cards img{
+        height: 150px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #main-grid{
+        width: 99%;
+    }
+    #main-grid{
+        width: 99%;
+        margin: 0 auto;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(40px, auto);
+        grid-template-areas:
+         "logo logo . . hamburger"
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "image image image image image "
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "main main main main main"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "side side side side side"
+         "cards cards cards cards cards"
+         "cards cards cards cards cards"
+         "cards cards cards cards cards"
+         ;
+    }
+    #menu{
+        grid-column: 3/6;
+        grid-row: 1/11;
+        height: 115%;
+        
+    }
+
+    .menu{
+        opacity: 0;
+        background-color: #fefdf9;
+        z-index: 1; 
+        transition: opacity 0.5s ease-in-out; 
+    }
+    .color{
+        background-color: #807e89;
+    }
+    .show-menu{
+        opacity: 1;
+    }
+    #menu ul {
+        display: grid;
+        align-items: center;
+        height: 100%;
+        padding-left: 20px;
+        align-content: center;
+        gap: 30px;
+        
+    }
+
+    #menu ul li{
+        color: #0b0a12;
+    }
+
+    .hamburger{
+        z-index: 2;
+        display: block;
+    }
+    .burger{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+/* Style the "cross" class to display an X icon */
+.cross .burger1 {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .cross .burger2 {
+    opacity: 0;
+  }
+  
+  .cross .burger3 {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

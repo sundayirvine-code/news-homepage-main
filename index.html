@@ -16,7 +16,7 @@
     <div id="logo">
       <img src="assets/images/logo.svg" alt="News Page Logo">
     </div>
-    <nav id="menu">
+    <nav id="menu" class="menu">
       <ul>
         <li class="menu-item">Home</li>
         <li class="menu-item">New</li>
@@ -25,6 +25,23 @@
         <li class="menu-item">Categories</li>
       </ul>
     </nav>
+    <div class="hamburger">
+      <span class="burger burger1"></span>
+      <span class="burger burger2"></span>
+      <span class="burger burger3"></span>
+    </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('#menu');
+      const burger = document.querySelector('.hamburger');
+      const body = document.querySelector('body');
+
+      hamburger.addEventListener('click', function() {
+        menu.classList.toggle('show-menu');
+        burger.classList.toggle('cross');
+        body.classList.toggle('color');
+      });
+    </script>
     <div id="image"></div>
     <div id="side">
       <div class="side-item0">
